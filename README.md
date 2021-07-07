@@ -18,3 +18,16 @@
 -f:<文件名>，具体写到哪个文件，这个参数已经没有用。
 -w:，真实串口转网络功能，其实就是去掉写文件功能。
 ```
+例子：
+
+本地串口COM4转网络，client模式：
+`dumpSerial.exe -p 10004 -i 192.168.6.200 -c com4 -w`
+
+本地串口COM4转网络，server模式：
+`dumpSerial.exe -p 10004 -i 0.0.0.0 -c com4 -w`
+
+串口截包，client模式：
+`dumpSerial.exe -p 10004 -i 192.168.6.200 -c com4`
+
+串口截包，server模式：
+`dumpSerial.exe -p 10004 -i 0.0.0.0 -c com4`
